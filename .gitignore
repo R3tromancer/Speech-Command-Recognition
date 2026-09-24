@@ -216,3 +216,51 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# ==========================================
+# Audio Datasets (Crucial for Speech Projects)
+# ==========================================
+# Prevents GitHub from blocking pushes due to large audio files
+data/
+datasets/
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# ==========================================
+# Machine Learning Models & Checkpoints
+# ==========================================
+# Excludes heavy model weights that exceed GitHub's 100MB limit
+models/
+saved_models/
+checkpoints/
+*.h5
+*.pt
+*.pth
+*.pkl
+*.onnx
+*.pb
+
+# ==========================================
+# Standard Python & Environment Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# ==========================================
+# IDEs and Configuration
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
